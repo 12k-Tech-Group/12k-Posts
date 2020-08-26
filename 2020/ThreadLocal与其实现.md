@@ -6,6 +6,6 @@ author: leohawke
 
 # ThreadLocal与其实现
 
-![](_v_images/1598414036_27188.png)
+![图1](assets/1598414036_27188.png)
 
 【白神你就写个这？】
