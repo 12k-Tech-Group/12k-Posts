@@ -1,7 +1,7 @@
 ---
-title: ThreadLocal与其实现
-date: 2020-08-26 11:50
-author: leohawke
+title: IEEE754
+date: 2020-08-26 14:20
+author: mq
 ---
 
 # IEEE754
