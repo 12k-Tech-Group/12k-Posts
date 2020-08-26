@@ -1,9 +1,9 @@
 {
-    "attachment_folder": "_v_attachments",
+    "attachment_folder": "assets",
     "created_time": "2020-08-26T03:50:54Z",
     "files": [
     ],
-    "image_folder": "",
+    "image_folder": "assets",
     "recycle_bin_folder": "_v_recycle_bin",
     "sub_directories": [
         {
