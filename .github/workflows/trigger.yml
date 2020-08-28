@@ -1,0 +1,18 @@
+name: Trigger
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger Build
+        run: |
+          curl -X POST https://api.github.com/repos/12k-Tech-Group/12k-Blog/dispatches \
+          -H 'Accept: application/vnd.github.everest-preview+json' \
+          -u ${{ secrets.ACCESS_TOKEN }} \
+          --data '{"event_type": "update", "client_payload": { "repository": "'"$GITHUB_REPOSITORY"'" }}'
+      
