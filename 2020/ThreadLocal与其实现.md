@@ -1,8 +1,7 @@
 ---
 title: ThreadLocal与其实现
 date: 2020-08-26 11:50
-author: leohawke
-modifier: frederick-vs-ja
+author: ~leohawke, ~frederick-vs-ja
 ---
 
 # ThreadLocal与其实现
