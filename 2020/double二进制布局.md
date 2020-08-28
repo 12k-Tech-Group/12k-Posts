@@ -1,5 +1,5 @@
 ---
-title: IEEE754
+title: double二进制布局
 date: 2020-08-26 14:20
 author: mq
 ---
@@ -18,7 +18,7 @@ author: mq
 * mantissa二进制小数去掉最高位的非零：1.xxxxxxxx(2) 只保留 x 的部分
 * s是符号位
 
-* 真实值 = $$ {s} \cdot 1 . {mantissa} \cdot 2 ^ { exp - 1023 } $$
+* 真实值 = $ {s} \cdot 1 . {mantissa} \cdot 2 ^ { exp - 1023 } $
 
 ### e.g. 1.5
 
