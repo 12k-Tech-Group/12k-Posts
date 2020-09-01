@@ -68,13 +68,13 @@ void func(int* a) {
 
 当然这也怪C++没有destructive move语义，如果有的话，unique_ptr应当是"trivially destructive movable"
 
-`reference_wrapper<T>`在此处与`unique_ptr<T>`有相同的问题
-
 ## 当API需要传递`T*[]`(裸指针的数组)时，`vector<unique_ptr<T>>` 就sb了
 
 vector的data()是`unique_ptr<T>*`，不是`T**`，除非你`reinterpret_cast`
 
 *（不过话说回来，non-strict-aliasing也是ABI的一部分）*
+
+`reference_wrapper<T>`在此处与`unique_ptr<T>`有相同的问题
 
 ## non-trivial的dtor可能会影响尾调用优化
 
