@@ -74,8 +74,6 @@ vector的data()是`unique_ptr<T>*`，不是`T**`，除非你`reinterpret_cast`
 
 *（不过话说回来，non-strict-aliasing也是ABI的一部分）*
 
-`reference_wrapper<T>`在此处与`unique_ptr<T>`有相同的问题
-
 ## non-trivial的dtor可能会影响尾调用优化
 
 众所周知，有non-trivial析构对象的函数的尾调用不是尾调用
