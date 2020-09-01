@@ -13,3 +13,5 @@
 * [double二进制布局 by mq](./2020/IEEE754.md)
 
 * [random相关 by mq](./2020/random.md)
+
+* [unique_ptr的缺陷 by mq](./2020/unique_ptr.md)
