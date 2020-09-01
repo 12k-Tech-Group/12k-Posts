@@ -1,3 +1,9 @@
+---
+title: unique_ptr的缺陷
+date: 2020-09-01 12:30
+author: mq
+---
+
 # unique_ptr的缺陷
 
 ## unique_ptr 不能被优化为裸指针
