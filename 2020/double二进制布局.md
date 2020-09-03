@@ -50,6 +50,26 @@ author: mq
 ```
 这个数就是 (0b1.<52个1>) * 2^1023
 
+### e.g. More on the “bias”
+
+* In IEEE 754 floating point numbers, the exponent is biased in the engineering sense of the
+word – the value stored is offset from the actual value by the exponent bias.
+* Biasing is done because exponents have to be signed values in order to be able to
+represent both tiny and huge values, but two's complement, the usual representation for
+signed values, would make comparison harder.
+* To solve this problem the exponent is biased before being stored, by adjusting its value to
+put it within an unsigned range suitable for comparison.
+* By arranging the fields so that the sign bit is in the most significant bit position, the biased
+exponent in the middle, then the mantissa in the least significant bits, the resulting value
+will be ordered properly, whether it's interpreted as a floating point or integer value. This
+allows high speed comparisons of floating point numbers using fixed point hardware.
+* When interpreting the floating-point number, the bias is subtracted to retrieve the actual
+exponent.
+* For a single-precision number, an exponent in the range −126 .. +127 is biased by adding
+127 to get a value in the range 1 .. 254 (0 and 255 have special meanings).
+* For a double-precision number, an exponent in the range −1022 .. +1023 is biased by adding
+1023 to get a value in the range 1 .. 2046 (0 and 2047 have special meanings).
+
 ### e.g. INF
 ```
 +-+-----------+----------------------------------------------------+
