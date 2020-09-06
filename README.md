@@ -15,3 +15,7 @@
 * [random相关 by mq](./2020/random.md)
 
 * [unique_ptr的缺陷 by mq](./2020/unique_ptr.md)
+
+## 数码硬件相关
+
+* [为啥内存不使用GDDR显存芯片](./2020/why-use-ddr-instead-of-gddr.md)
